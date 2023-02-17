@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nozarik.css') }}"
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <h1 class="page-title">Nozarik</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('nozarik') }}">Home</a></li>
+                    <li><a href="{{ url_for('politica') }}">Politica</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="nozarik">
+      <div class="container" style="color:white">
+            <h2 class="section-title">Callisto</h2>
+            <p>A nozarik la religione ufficiale è quella della dea Callisto , dea guerriera da molti adorata , a causa degli anni porpora esistono più culti ma quello di questa de è A il principale .
+La società presenta un attuale eta dell oro. Fra le più comuni tradizioni ci sono la festa di mezza estate che sancisce l'inizio del periodo in cui si puo iniziare a mietere il grano , la festa di mezza estate si festeggia con una serie di goliardie che sfociano solitamente in un banchetto attorno ad un falò. Un altro giorno di festa importante e il giorno di callisto * situato nel 13 lude della sera , si festeggia con una serie di tornei solitamente tenuti a nalowand . a parte callisto esistono ben pochi dei
+
+</p>
+        </div>      
+      <div class="container" style="color:white">
+            <h3 class="section-title2">Leggenda</h2>
+            <p>La leggenda di Callisto racconta la storia di una giovane guerriera, Callisto, che visse durante gli Anni Porpora. Si dice che fosse una combattente eccezionale, abile con tutte le armi e dotata di una forza fisica sovrumana. Dopo aver combattuto in molte battaglie e aver salvato molte vite, Callisto divenne una leggenda tra i soldati e la gente. Si dice che un giorno, durante una battaglia contro un esercito nemico, Callisto fu ferita gravemente. Con le sue ultime forze, riuscì a raggiungere un tempio dedicato alla dea guerriera e lì implorò la divinità di salvare il suo popolo. La dea ascoltò le sue preghiere e guarì Callisto, ma a un prezzo: doveva diventare la sua sacerdotessa e dedicare la sua vita a combattere il male e proteggere il suo popolo. 
+Da quel giorno in poi, Callisto divenne una guerriera invincibile, in grado di sconfiggere qualsiasi nemico con il potere della dea. Si dice che sia vissuta per molte generazioni, proteggendo Nozarik e la sua gente. Quando infine morì, la gente la venerò come una dea e costruì un tempio in suo onore. Oggi, la dea Callisto è venerata come la protettrice dell'isola e la sua festa è celebrata con grandi tornei e festeggiamenti.
+</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

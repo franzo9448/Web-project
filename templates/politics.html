@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nozarik.css') }}"
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <h1 class="page-title">Nozarik</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('nozarik') }}">Home</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="nozarik">
+      <div class="container" style="color:white">
+            <h2 class="section-title">Politica</h2>
+            <p>Il sistema politico di Nozarik è basato su un sistema di monarchia costituzionale, con un re o una regina che regna sull'isola con l'appoggio del parlamento. Il parlamento è composto da rappresentanti eletti dalla popolazione dell'isola, che si riuniscono per discutere le leggi e le questioni politiche importanti. La monarchia ha il potere di veto su leggi proposte dal parlamento, ma non ha il potere di governare senza il loro consenso. La monarchia di Nozarik è una dinastia che risale a molti secoli fa e la corona viene tramandata di generazione in generazione all'interno della famiglia reale. Il re o la regina sono scelte dalla famiglia reale attraverso un processo di successione, e devono essere approvati dal parlamento prima di assumere il trono. Il potere reale è limitato dalla costituzione, che stabilisce i diritti e le libertà dei cittadini di Nozarik, nonché le regole per la formazione del governo. La costituzione è stata scritta molti secoli fa e non è stata modificata significativamente da allora. Ci sono anche diverse fazioni politiche sull'isola, tra cui i conservatori, i liberali e i nazionalisti. Ognuna di queste fazioni ha i propri interessi e le proprie idee su come dovrebbe essere governato l'isola e cercano di influire sul governo attraverso i loro rappresentanti nel parlamento. Inoltre, le gilde di mercanti, come la pentola d'oro, hanno una grande influenza sul sistema politico di Nozarik. Essi sono spesso coinvolti in trattative con il governo e possono influire sulle decisioni economiche e commerciali dell'isola.
+</p>
+        </div>      
+      <div class="container" style="color:white">
+            <h3 class="section-title2">Geopolitica</h2>
+            <p>Nozarik è suddivisa in due grandi città: <a href="{{ url_for('floreal') }}">Floreal</a>, la capitale elfica, che è potente e grande, e <a href="{{ url_for('nalowand') }}">Nalowand</a>, considerata la capitale spirituale e politica. Inoltre, sull'isola ci sono anche diversi villaggi e accampamenti. Floreal, la capitale elfica, è una città potente e grande, con una cultura sofisticata e una forte tradizione di artigianato e commercio. Gli elfi di Fiolear sono noti per la loro abilità nella creazione di tessuti pregiati, gioielli e oggetti d'arte, e la città è famosa per i suoi mercati e i suoi negozi di lusso. La città è governata da un consiglio di anziani elfi, che rappresentano le varie famiglie e gilde della città. Nalowand, considerata la capitale spirituale e politica, è una città più piccola e raccolta rispetto a Fiolear, ma è altrettanto importante per la cultura di Nozarik. La città è famosa per la sua grande biblioteca, che raccoglie antichi testi e manufatti degli arh, e per la sua scuola di magia, che è considerata una delle migliori del continente. La città è governata da un gruppo di sacerdoti e maghi, che rappresentano le varie tradizioni spirituali e magiche di Nozarik. I villaggi e gli accampamenti sparsi per il continente sono abitati da una varietà di popoli, tra cui nani, goblin e halfling. Queste comunità sono spesso legate alla terra e alla natura, e si dedicano all'agricoltura, alla caccia e all'estrazione di minerali. Alcuni di questi villaggi sono governati da capi tribù o da consigli di anziani, mentre altri sono più autonomi e si basano su un sistema di consenso.</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
