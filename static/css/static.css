@@ -1,0 +1,32 @@
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Home page */
+/* Home page */
+.home {
+    background: url('/static/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.home-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37;
+}
+
+.home-title a {
+    text-decoration: none;
+    color: #d4af37;
+}
+

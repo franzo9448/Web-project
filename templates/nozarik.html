@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <p>Nozarik</p>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="section-title">Geography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet mauris et congue rutrum. Nullam ac quam enim. Duis eleifend purus sed sapien suscipit, at tristique sapien interdum. Integer quis est sed libero facilisis blandit id id eros. Sed et mi id lorem bibendum ultrices. Fusce vestibulum magna ut bibendum luctus. Sed euismod metus id diam luctus, nec aliquam mauris feugiat. Donec eget efficitur eros, quis tristique neque. Sed sem metus, auctor vel dolor ut, fermentum feugiat lacus.</p>
+            <p>Proin eu nulla a urna maximus lacinia. Praesent euismod, nisi vel eleifend sagittis, dui dui sollicitudin lorem, quis egestas dui libero vel ipsum. Nam nec sem ut sapien congue molestie id a risus. Donec efficitur mi at velit bibendum egestas. Sed euismod elit vel elit rutrum, in sollicitudin magna fermentum. Morbi vel mauris at lorem molestie facilisis. Donec quis mauris sit amet tellus congue congue. Aliquam id nulla enim. Etiam eu sagittis odio. Etiam aliquam lectus a lacus aliquet, vel pellentesque massa fermentum. Donec volutpat, ante eget molestie sagittis, lacus sapien maximus nunc, nec ultrices nisi enim ac lectus.</p>
+        </div>
+        <div class="map">
+            <img src="{{ url_for('static', filename='img/map.jpg') }}" alt="Map of Nozarik">
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
