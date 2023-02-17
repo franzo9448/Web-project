@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nozarik.css') }}"
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <h1 class="page-title">Nozarik</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('nozarik') }}">Home</a></li>
+                    <li><a href="{{ url_for('politica') }}">Politica</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="nozarik">
+      <div class="map-container">
+            <img src="{{ url_for('static', filename='/maps/Nalowand.png') }}" alt="Map of Nozarik">
+      </div>  
+      <div class="container" style="color:white">
+            <h2 class="section-title">Nalowand</h2>
+            <p>Nalowand è stata fondata molti secoli fa da un gruppo di esploratori che si stabilirono sulla costa dell'oceano, in quella che si rivelò essere una fertile pianura agricola. Nel corso dei secoli, la città è cresciuta e si è sviluppata in un importante centro commerciale e culturale, che attira visitatori da tutto il continente. Il mercato coperto di Nalowand è una delle attrazioni principali della città, dove si possono trovare una vasta gamma di prodotti, dai tessuti pregiati alle ceramiche fini, passando per spezie esotiche e strumenti musicali rari. I quartieri artigianali sono un altro punto forte della città, dove si trovano botteghe specializzate nella produzione di gioielli, armi, mobili e altro ancora. La vita culturale di Nalowand è altrettanto vibrante, con numerosi teatri, musei e sale da concerto. La grande cattedrale della città è un imponente esempio di architettura religiosa, con alti soffitti a volta e bellissime vetrate colorate che illuminano la navata centrale. Il palazzo del consiglio, situato nel cuore della città, ospita il consiglio degli anziani, che governa la città con saggezza e lungimiranza. Nalowand è anche un importante centro militare, con una forte presenza militare che garantisce la sicurezza della città e delle regioni circostanti. La città ha una grande guarnigione, che si addestra regolarmente nelle scuole di combattimento locali, tra cui l'Accademia dei Cavalieri, una prestigiosa scuola di addestramento per i cavalieri della città. Nonostante il suo successo, Nalowand è anche una città che ha conosciuto il conflitto e la lotta. Durante le guerre del passato, la città è stata assediata e distrutta più volte, ma è sempre risorta dalle sue ceneri, grazie alla tenacia e alla determinazione dei suoi abitanti. Oggi, Nalowand è una città fiorente e cosmopolita, che guarda al futuro con ottimismo e speranza.</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

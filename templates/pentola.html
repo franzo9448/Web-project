@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nozarik.css') }}"
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <h1 class="page-title">Nozarik</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('nozarik') }}">Home</a></li>
+                    <li><a href="{{ url_for('politica') }}">Politica</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="nozarik"> 
+      <div class="container" style="color:white">
+            <h2 class="section-title">Pentola Dorata</h2>
+            <p>La Pentola Dorata si distingue anche per la sua filantropia e le attività di beneficenza. L'organizzazione ha costruito scuole, ospedali e case per i bisognosi, dimostrando così il loro impegno per il benessere della comunità. Inoltre, la Pentola Dorata ha creato un programma di formazione per gli imprenditori emergenti, offrendo le loro conoscenze e risorse per aiutare gli altri a raggiungere il successo. Nonostante la loro reputazione positiva, la Pentola Dorata ha anche acquisito diversi nemici nel corso degli anni. Alcuni rivali commerciali vedono l'organizzazione come una minaccia ai loro affari, mentre altri sospettano che i loro affari non siano del tutto etici. La Pentola Dorata ha anche attirato l'attenzione di organizzazioni criminali, che vedono l'organizzazione come un'opportunità per fare soldi o come una minaccia ai loro stessi affari. In generale, la Pentola Dorata rappresenta una forza economica significativa in Nozarik, con un impatto importante sull'economia e sulla società nel suo complesso. La loro influenza è stata spesso oggetto di dibattito e controversie, ma la loro presenza e importanza nel mondo degli affari rimangono indiscutibili.</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
