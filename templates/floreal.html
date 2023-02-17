@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Campaign Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nozarik.css') }}"
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <h1 class="page-title">Nozarik</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('nozarik') }}">Home</a></li>
+                    <li><a href="{{ url_for('politica') }}">Politica</a></li>
+                    <li><a href="{{ url_for('characters') }}">Characters</a></li>
+                    <li><a href="{{ url_for('notes') }}">Notes</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="nozarik">
+      <div class="map-container">
+            <img src="{{ url_for('static', filename='maps/floleral.png') }}" alt="Map of Nozarik">
+      </div>  
+      <div class="container" style="color:white">
+            <h2 class="section-title">Geografia</h2>
+            <p>Floreal è una città con un'architettura variegata che mescola stili medievali e moderni. Il centro della città è caratterizzato da grandi piazze lastricate e edifici in pietra, tra cui il palazzo del re, la sede del Consiglio dei Maghi e l'Università di Floreal. Lungo le strade principali si trovano negozi, taverne e botteghe artigiane, mentre i quartieri residenziali sono caratterizzati da case con tetti spioventi e giardini fioriti. Floreal è circondata da una cinta muraria imponente e le sue porte sono sorvegliate costantemente dalle guardie cittadine. All'esterno delle mura si estendono campagne fertili e boschi rigogliosi, che forniscono alla città una grande varietà di prodotti agricoli, come frutta, verdura, carne e lana. La Floreal Scuola di Magia è il fiore all'occhiello della città ed è famosa per i suoi insegnamenti di magia avanzata. Gli studenti vengono selezionati su base nazionale e internazionale e solo i più talentuosi e promettenti sono ammessi. La scuola è situata su una collina vicino alla città e si presenta come un grande complesso di edifici in pietra, con torri, aule e laboratori di ricerca. La guardia cittadina di Floreal è una forza di polizia altamente addestrata, composta da soldati e ufficiali che pattugliano le strade e mantengono l'ordine pubblico. La gilda dei cacciatori, invece, è un'organizzazione di mercenari specializzati nella caccia alle creature pericolose, che possono minacciare la sicurezza della città. L'Ordine dell'Ascia è una scuola di combattimento che insegna l'uso dell'ascia a una mano. Fondata secoli fa da un guerriero leggendario, l'Ordine è ancora oggi considerato il più famoso della regione e attira molti studenti in cerca di addestramento militare avanzato. L'Accademia dell'Ordine è situata a nord della città, in un'area boscosa, e ha una serie di campi di addestramento all'aperto e aule per le lezioni teoriche.</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
